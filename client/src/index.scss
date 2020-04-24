@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  background-color: #111;
+}
+
+.App {
+  max-width: 960px;
+  margin: auto;
+  margin: 100px;
+}
+
+.calculator {
+  background-color: #000;
+  border: 1px solid #616c63;
+}
+
+.display {
+  color: #fff;
+  font-size: 50px;
+  text-align: right;
+  margin: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 20%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #1F1F1F;
+  font-family: Segoe UI;
+  color: #FFF;
+
+  &:hover {
+    background: #353535;
+  }
+
+  &:active {
+    background: #4C4C4C;
+  }
+
+  &.calculate {
+    width: 100%;
+  }
+}
+
+.journal {
+  color: #fff;
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 20px 20px 20px 0;
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    width: 50%;
+
+    &.calculate {
+      width: 100%;
+    }
+  }
+
+  .one { order: 1 }
+  .two { order: 2 }
+  .three { order: 3 }
+  .four { order: 4 }
+  .five { order: 5 }
+  .six { order: 6 }
+  .seven { order: 7 }
+  .eight { order: 8 }
+  .nine { order: 9 }
+  .zero { order: 10 }
+  .negate { order: 11 }
+  .point { order: 12 }
+  .C { order: 13 }
+  .backspace { order: 14 }
+  .multiply { order: 15 }
+  .divide { order: 16 }
+  .subtract { order: 17 }
+  .summarize { order: 18 }
+  .openBracket { order: 19 }
+  .closeBracket { order: 20 }
+  .calculate { order: 21 }
+}
